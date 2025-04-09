@@ -146,11 +146,11 @@ export default function CalendarPage() {
 
         {/* 요일 헤더 */}
         <div className="grid grid-cols-7 gap-2 mb-4">
-          {["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].map((day, idx) => (
+          {["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"].map((day, idx) => (
             <div
               key={day}
               className={`text-center font-bold ${
-                idx === 0 ? "text-red-500" : idx === 6 ? "text-blue-500" : ""
+                idx === 5 ? "text-blue-500" : idx === 6 ? "text-red-500" : ""
               }`}
             >
               {day}
